@@ -1,4 +1,4 @@
-/* Fondo general */
+/* fondo general */
 body {
     display: flex;
     justify-content: center;
@@ -11,7 +11,7 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-/* Caja de la calculadora */
+/* caja de la calculadora */
 .calculadora {
     background-color: white;
     padding: 75px;
@@ -20,7 +20,7 @@ body {
     width: 280px;
 }
 
-/* Barra superior */
+/* barra superior */
 .top-bar {
     display: flex;
     align-items: center;
@@ -28,6 +28,7 @@ body {
     margin-bottom: 10px;
 }
 
+/*circulos superiores de la calculadora*/
 .circle {
     width: 12px;
     height: 12px;
@@ -35,10 +36,17 @@ body {
     display: inline-block;
 }
 
-.red { background-color: #ff605c; }
-.yellow { background-color: #ffbd44; }
-.green { background-color: #00ca56; }
+.red { 
+    background-color: #ff605c;
+}
+.yellow { 
+    background-color: #ffbd44; 
+}
+.green { 
+    background-color: #00ca56; 
+}
 
+/* título de la calculadora */
 .title {
     margin-left: auto;
     margin-right: auto;
@@ -47,7 +55,7 @@ body {
     color: #333;
 }
 
-/* Pantalla */
+/* pantalla */
 #pantalla {
     width: 92%;
     height: 60px;
@@ -62,7 +70,7 @@ body {
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
 }
 
-/* Cuadrícula de botones */
+/* cuadrícula de botones */
 .botones-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -70,8 +78,9 @@ body {
     gap: 10px;
 }
 
-/* Botones base */
+/* botones base */
 button {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     border: none;
     border-radius: 10px;
@@ -82,38 +91,52 @@ button {
     transition: background-color 0.3s, transform 0.1s;
 }
 
-/* Hover y presionado */
-button:hover { background-color: #555; }
-button:active { transform: translateY(2px); box-shadow: 0 2px #222; }
+/* hover y presionado */
+button:hover { 
+    background-color: #555; 
+}
+button:active { 
+    transform: translateY(2px); 
+    box-shadow: 0 2px #222; 
+}
 
-/* Botón limpiar */
+/* botón limpiar */
 #clear {
+    font-family: 'Times New Roman', Times, serif;
     background-color: #e74c3c;
 }
 
-#clear:hover { background-color: #c0392b; }
-
-/*Boton mas largo*/
-.mas {
-    grid-column: 4;
-    grid-row: span 2; /* ocupa dos filas verticalmente */
-    background-color: #f39c12;
+#clear:hover { 
+    background-color: #c0392b; 
 }
 
-/* Botón igual largo */
+/*boton mas(+) largo*/
+.mas {
+    font-family: 'Times New Roman', Times, serif;
+    grid-column: 4;
+    grid-row: span 2; /* ocupa dos filas verticalmente */
+    background-color: #333;
+}
+
+/* botón igual(=) largo */
 .igual {
+    font-family: 'Times New Roman', Times, serif;
     background-color: #27ae60;
     grid-row: 4 / span 2; /* ocupa dos filas verticalmente */
     grid-column: 4;
 }
 
-.igual:hover { background-color: #1e8449; }
+.igual:hover { 
+    background-color: #1e8449; 
+}
 
-/* Botón 0 ocupa dos columnas */
+/* Botón cero(0) ocupa dos columnas */
 .cero {
+    font-family: 'Times New Roman', Times, serif;
     grid-column: span 2;
 }
 
+/* estilo del pie de pagina */
 footer {
     position: fixed;
     bottom: 10px;
