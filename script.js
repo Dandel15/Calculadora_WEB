@@ -1,3 +1,4 @@
+// script.js
 // seleccionar la pantalla y los botones
 const pantalla = document.getElementById('pantalla');
 const botones = document.querySelectorAll('.botones-grid button');
